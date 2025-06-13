@@ -1,0 +1,1 @@
+web: python petclinic_mcp_server.py
