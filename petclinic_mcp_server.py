@@ -24,4 +24,4 @@ async def fetch_petsByStatus(status: str) -> dict:
 
 if __name__ == "__main__":
     # Initialize and run the server
-    mcp.run(transport='stdio')
+    mcp.run(transport='sse')

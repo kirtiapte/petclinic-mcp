@@ -30,6 +30,16 @@ It exposes following capabilites
 ```bash
 npx @modelcontextprotocol/inspector uv run research_server.py
 ```
+* tip use stdio transport to avoid remote server setup
+```bash
+   mcp.run(transport='stdio')
+```
+
+* OR launch the mcp server without inspector
+```bash
+   uv run petclinic_mcp_server.py
+```
+
 
 ## Configuration for Claude Desktop
 
