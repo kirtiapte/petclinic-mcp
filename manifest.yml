@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: research-papers-mcp
+  - name: petclinic-mcp
     memory: 512M
     instances: 1
     buildpacks:
@@ -8,4 +8,4 @@ applications:
     env:
       PYTHONPATH: .
     services: []
-    command: python research_server.py
+    command: python petclinic_mcp_server.py

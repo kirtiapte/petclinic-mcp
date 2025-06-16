@@ -13,6 +13,10 @@ It exposes following capabilites
 * Python
 
 ## Running locally
+* tip use stdio transport to avoid remote server setup.  Change petclinic_mcp_server.py line 39 to use stdio transport
+```bash
+   mcp.run(transport='stdio')
+```
 * Clone the project, navigate to the project directory and initiate it with uv:
 ```bash
     uv init
@@ -30,11 +34,6 @@ It exposes following capabilites
 ```bash
 npx @modelcontextprotocol/inspector uv run research_server.py
 ```
-* tip use stdio transport to avoid remote server setup
-```bash
-   mcp.run(transport='stdio')
-```
-
 * OR launch the mcp server without inspector
 ```bash
    uv run petclinic_mcp_server.py
@@ -76,6 +75,11 @@ You will need to supply a configuration for the server for your MCP Client. Here
 ```
 
 ## Deploy to Cloud Foundry
+* tip use sse transport to deploy petclinic mcp server as a remote server.  Change petclinic_mcp_server.py line 39 to use stdio transport
+```bash
+   mcp.run(transport='sse')
+```
+* Login to your Cloud Foundry account and push the application
 ```
 cf push -f manifest.yml
 ```
