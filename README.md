@@ -32,7 +32,7 @@ It exposes following capabilites
 ```
 * Launch the mcp inspector
 ```bash
-npx @modelcontextprotocol/inspector uv run research_server.py
+npx @modelcontextprotocol/inspector uv run petclinic_mcp_server.py
 ```
 * OR launch the mcp server without inspector
 ```bash
