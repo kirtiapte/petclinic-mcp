@@ -1,7 +1,7 @@
 # petclinic-mcp
 
 # Petclinic MCP server
-Petclinic MCP server uses petclinic v3 apis (https://petstore3.swagger.io/#/).  It interacts with the Swagger Petstore API (similar to a "PetClinic") and exposes tools to be used by OpenAI models.
+Petclinic MCP server uses petclinic v2 apis (https://petstore.swagger.io/v2/swagger.json).  It interacts with the Swagger Petstore API (similar to a "PetClinic") and exposes tools to be used by OpenAI models.
 
 It exposes following capabilites
 - fetch_petsByStatus: Available status values : available, pending, sold
