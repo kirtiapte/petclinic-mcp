@@ -26,7 +26,7 @@ async def fetch_petsByStatus(status: str) -> dict:
     """Retrieve pets from petstore api"""
     # Use 'async def' for operations involving network calls, file I/O, etc.
     # This prevents blocking the server while waiting for external operations.
-    url = f"https://petstore3.swagger.io/api/v3/pet/findByStatus?status={status}"
+    url = f"https://petstore.swagger.io/v2/pet/findByStatus?status={status}"
     async with get_secure_client() as client:
         response = await client.get(url)
         response.raise_for_status()
